@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Форми</title>
+<link rel="stylesheet" href="forms.css">
+</head>
+<body>
+<form action="test.php" method="get">
+<div>
+<label for="name">Ім'я</label><br />
+<input type="text" placeholder="Введіть Ваше ім'я">
+</div>
+<div>
+Більше подобаються<br />
+<input type="radio" name="like" value="cats"><label for="likeCats">Котики</label>
+<input type="radio" name="like" value="dogs"><label for="likeDogs">Песики</label>
+</div>
+<div>
+<label for="education">Зараз навчаюсь</label><br />
+<select name="education" id="education">
+<option value="none">Не вказано</option>
+<option value="school">У школі</option>
+<option value="univer">У ВНЗ</option>
+<option value="other">Інше</option>
+</select>
+</div>
+<div>
+<label for="agree">Згода на обробку даних</label>
+<input type="checkbox" name="agree" id="agree" value="1">
+</div>
+<div>
+<button type="submit">Відправити дані</button>
+<button type="submit">Очистити форму</button>
+</div>
+</form>
+</body>
+</html>
